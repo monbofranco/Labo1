@@ -1,6 +1,6 @@
 html {
     z-index: -1;
-    background-image: url(images/background.jpeg);
+    background-image: url(background.jpeg);
   
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    
@@ -33,7 +33,7 @@ aside{
 }
 
 #bant{
-    background-image: url(images/background.jpeg);
+    background-image: url(background.jpeg);
 
 }
 
@@ -87,12 +87,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.348);
    
 }
 
-#bannerbg img{
-  
-  
 
-
-}
 
 .card img{
 
