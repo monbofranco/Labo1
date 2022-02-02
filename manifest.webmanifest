@@ -2,7 +2,7 @@
     "theme_color": "#d3cfc5",
     "background_color": "#d3cfc5",
     "display": "browser",
-    "scope": "/",
+    "scope": "https://monbofranco.github.io/Labo1/",
     "start_url": "https://monbofranco.github.io/Labo1/",
     "name": "Custom Armory",
     "short_name": "C.ARM",
