@@ -8,7 +8,7 @@ this.addEventListener('install', function(event) {
             'style.css',
             'index.js',
             'banner1.jpg',
-            'banner.jpge',
+            'banner.jpeg',
             'beginnerguide.jpeg',
             'custom1.jpeg',
             'icones/icon-512x512.png',
