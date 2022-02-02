@@ -1,31 +1,31 @@
 if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').then(function(reg) {
-        // registration worked
-        console.log('Yes ! Enregistrement réussi !. Scope is ' + reg.scope);
-    }).catch(function(error) {
-        // registration failed
-        console.log('Aie Aie erreur ' + error);
-      });
-    };
+  navigator.serviceWorker.register('sw.js').then(function(reg) {
+      // registration worked
+      console.log('Yes ! Enregsistrement réussi !. Scope is ' + reg.scope);
+  }).catch(function(error) {
+      // registration failed
+      console.log('Aie Aie erreur ' + error);
+    });
+  };
 
 
 // Initialise la variable pour l'utiliser plus tard afin d'afficher une invitation a installer la PWA
 let deferredPrompt;
- 
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Empêcher la mini-barre d'information d'apparaître sur mobile si deja installée
-  e.preventDefault();
-  // Réserve l'événement pour qu'il puisse être déclenché plus tard
-  deferredPrompt = e;
-  // Informe l'utilisateur qu'il peut installer la PWA avec une fenêtre
-  installApp();
-  
-  console.log(`'beforeinstallprompt' a été déclenché !`);
 
-  // Fonction qui renvoie a l'installation de l'application quand le boutton "Installer" est cliqué !
-    appButton.addEventListener('click', function() {
-      deferredPrompt.prompt();
-    })
+window.addEventListener('beforeinstallprompt', (e) => {
+// Empêcher la mini-barre d'information d'apparaître sur mobile si deja installée
+e.preventDefault();
+// Réserve l'événement pour qu'il puisse être déclenché plus tard
+deferredPrompt = e;
+// Informe l'utilisateur qu'il peut installer la PWA avec une fenêtre
+installApp();
+
+console.log(`'beforeinstallprompt' a été déclenché !`);
+
+// Fonction qui renvoie a l'installation de l'application quand le boutton "Installer" est cliqué !
+  appButton.addEventListener('click', function() {
+    deferredPrompt.prompt();
+  })
 
 });
 
@@ -33,8 +33,8 @@ window.addEventListener('beforeinstallprompt', (e) => {
 // Possible de faire autrement, mais le toast de bootstrap est assez simple a utiliser
 
 function installApp() {
-  console.log('hey ma fenetre marche!');
-  const fenetre = document.getElementById('message')
-  const toast = new bootstrap.Toast(fenetre, {delay: 6000}) //reste affichée 6 secondes seulement
-  toast.show();
+console.log('hey ma fenetre marche!');
+const fenetre = document.getElementById('message')
+const toast = new bootstrap.Toast(fenetre, {delay: 6000}) //reste affichée 6 secondes seulement
+toast.show();
 };
