@@ -8,7 +8,7 @@ this.addEventListener('install', function(event) {
             'style.css',
             'index.js',
             'banner1.jpg',
-            'banner.jpeg',
+            'banneer2.webp',
             'beginnerguide.jpeg',
             'custom1.jpeg',
             'icones/icon-512x512.png',
@@ -17,7 +17,10 @@ this.addEventListener('install', function(event) {
             'bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js',
             'customv1.jpeg',
             'custom1.jpeg',
-            'icone.jpg'
+            'icone.jpg',
+            'background.jpeg',
+            'background.webp',
+            
         ]);
       })
     );

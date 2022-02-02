@@ -33,7 +33,7 @@ console.log(`'beforeinstallprompt' a été déclenché !`);
 // Possible de faire autrement, mais le toast de bootstrap est assez simple a utiliser
 
 function installApp() {
-console.log('hey ma fenetre marche!');
+console.log('ça marche?');
 const fenetre = document.getElementById('message')
 const toast = new bootstrap.Toast(fenetre, {delay: 6000}) //reste affichée 6 secondes seulement
 toast.show();
