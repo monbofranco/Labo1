@@ -41,3 +41,4 @@ function installApp() {
   const toast = new bootstrap.Toast(fenetre, {delay: 6000}) //reste affichée 6 secondes seulement
   toast.show();
 };
+
