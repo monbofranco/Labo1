@@ -43,5 +43,5 @@ this.addEventListener('install', function(event) {
   });
 
   this.addEventListener('activate', (e) => {
-  console.log('Service worker activé, all good !');
+  console.log('Service worker activated !');
 });
